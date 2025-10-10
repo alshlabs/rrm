@@ -131,7 +131,7 @@ jobs:
           fi
           declare -i var="$LAST_TAG"
           var=$var+1
-          TAG="0.0.$var"
+          TAG="0.1.$var"
 
           echo "Tag: ${TAG}"
           
