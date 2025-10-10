@@ -142,6 +142,7 @@ jobs:
 
           for name in *; do
             cd "${{ github.workspace }}/artifacts/${name}/release"
+            chmod +x ./*
             tar -czvf ./${name}.tar.gz ./*
             gh release upload $TAG ${name}.tar.gz
           done
