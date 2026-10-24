@@ -1,7 +1,7 @@
 [package]
 name = "rrm"
 version = "0.2.0"
-edition = "2021"
+edition = "2024"
 
 [lints.rust]
 elided_lifetimes_in_paths = "allow"
@@ -9,7 +9,7 @@ rust_2018_idioms = { priority = -1, level = "deny" }
 
 [lints.clippy]
 module_inception = "allow"
-uninlined-format-args = "allow"
+uninlined_format_args = "allow"
 
 [dependencies]
 clap = { version = "4.5.40", features = ["derive"] }
